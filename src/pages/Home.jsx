@@ -4,8 +4,11 @@ import BetawiSection from '../components/BetawiSection';
 import JakartaSection from '../components/JakartaSection';
 import Logo from '../assets/images/logo-2.png';
 import { QuizSection } from '../components/QuizSection';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <main className="mb-28">
       <HeroCarousel />
@@ -16,18 +19,20 @@ const Home = () => {
             src={Logo}
             alt="RupaJakarta"
             className="md:h-[130px] h-[80px] object-contain"
+            data-aos="fade-in"
           />
 
-          <p className="text-yellow-400 text-xl md:text-3xl font-semibold text-center md:text-left">
-            Warna-warni Tradisi dari Tanah Betawi
+          <p
+            className="text-yellow-400 text-xl md:text-3xl font-semibold text-center md:text-left"
+            data-aos="fade-in"
+          >
+            {t('home.slogan')}
           </p>
         </div>
       </section>
 
       <BetawiSection />
-
       <JakartaSection />
-
       <QuizSection />
     </main>
   );

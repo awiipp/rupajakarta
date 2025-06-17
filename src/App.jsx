@@ -11,11 +11,22 @@ import QuizRulesPage from './pages/QuizRules';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+  const { i18n } = useTranslation();
+
   useEffect(() => {
-    AOS.init({ duration: 300, once: false, delay: 200 });
+    AOS.init({ duration: 300, once: true, delay: 200 });
   }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, []);
+
+  useEffect(() => {
+    AOS.refreshHard();
+  }, [i18n.language]);
 
   return (
     <BrowserRouter>

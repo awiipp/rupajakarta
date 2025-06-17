@@ -4,8 +4,13 @@ import ImageSilat from '../assets/images/silat.jpg';
 import ImageOndel from '../assets/images/ondel-ondel-carousel.jpeg';
 import ImageFatahillah from '../assets/images/fatahillah.jpg';
 import ImageMonas from '../assets/images/monas-atas.jpeg';
+import { useTranslation } from 'react-i18next';
 
 export default function HeroCarousel() {
+  const { t } = useTranslation();
+  const { i18n } = useTranslation();
+  const isJapanese = i18n.language === 'jp';
+
   const images = [
     { src: ImageMonas, alt: 'Monas' },
     { src: ImageSilat, alt: 'Silat Betawi' },
@@ -38,17 +43,19 @@ export default function HeroCarousel() {
 
       <div className="absolute inset-0 flex flex-col justify-center items-center z-20 text-white text-center px-4">
         <h1
-          className="text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg font-serif w-[90%]"
+          className={`${
+            isJapanese ? 'text-5xl' : 'text-4xl'
+          } md:text-6xl font-bold leading-tight drop-shadow-lg font-serif w-[90%]`}
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
           data-aos-delay="400"
           data-aos-offset="0"
         >
-          Selamat Datang di <br />
+          {t('hero.welcome')} <br />
           <span className="text-yellow-400">
-            Pengenalan Budaya{' '}
+            {t('hero.intro')}{' '}
             <span className="relative inline-block">
-              Jakarta
+              {t('hero.jakarta')}
               <span className="absolute left-0 md:-bottom-2 -bottom-0.5 md:h-[6px] h-[4px] w-full bg-red-600"></span>
             </span>
           </span>

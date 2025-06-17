@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 import Background from '../assets/images/background/ondel.jpeg';
 import RulesImage from '../assets/images/logo-quiz.png';
+import { useTranslation } from 'react-i18next';
 
 export default function QuizRulesPage() {
+  const { t } = useTranslation();
+
   return (
     <main className="relative min-h-screen flex justify-center items-start text-white">
       <div
@@ -19,31 +22,33 @@ export default function QuizRulesPage() {
           src={RulesImage}
           alt="Ilustrasi Peraturan Quiz"
           className="mx-auto md:h-48 h-32 object-cover mb-6"
+          data-aos="fade-in"
+          data-aos-delay="500"
         />
 
-        <h2 className="text-xl text-left md:text-4xl font-bold mb-2 text-yellow-400">
-          Peraturan Quiz
+        <h2
+          className="text-xl text-left md:text-4xl font-bold mb-2 text-yellow-400"
+          data-aos="fade-in"
+        >
+          {t('quizRules.title')}
         </h2>
 
-        <ul className="list-disc list-inside space-y-4 text-lg text-left">
-          <li>
-            Quiz berisi <strong>10 soal</strong>.
-          </li>
-          <li>
-            Quiz tentang <strong>budaya Betawi</strong> dan{' '}
-            <strong>ikon tempat di Jakarta</strong>.
-          </li>
-          <li>
-            Jawab dengan benar untuk mendapatkan <strong>poin</strong>!
-          </li>
+        <ul
+          className="list-disc list-inside space-y-4 text-lg text-left"
+          data-aos="fade-in"
+        >
+          {t('quizRules.rules', { returnObjects: true }).map((rule, i) => (
+            <li key={i} dangerouslySetInnerHTML={{ __html: rule }} />
+          ))}
         </ul>
 
-        <div className="mt-12">
+        <div className="mt-10">
           <Link
             to={'/quiz'}
             className="inline-block px-6 py-3 bg-yellow-400 text-red-700 font-semibold shadow hover:bg-yellow-500 transition"
+            data-aos="fade-up"
           >
-            Mulai Quiz
+            {t('quizRules.start')}
           </Link>
         </div>
       </div>

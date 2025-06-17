@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Ondel from '../assets/images/ondel.jpeg';
 import Rumah from '../assets/images/rumah.jpg';
 import Silat from '../assets/images/silat.jpg';
@@ -7,30 +8,32 @@ import PawaiBetawi from '../assets/images/pawai-betawi.jpg';
 import AkarKelapa from '../assets/images/akar-kelapa.jpeg';
 
 export default function BudayaDetailPage() {
+  const { t } = useTranslation();
+
   const budayaItems = [
     {
-      title: 'Ondel-Ondel',
-      desc: 'Ondel-ondel adalah boneka raksasa khas Betawi yang digunakan untuk meramaikan berbagai acara adat dan perayaan. Boneka ini memiliki tampilan mencolok dengan wajah merah atau putih dan rambut kaku yang khas. Biasanya dimainkan berpasangan, satu pria dan satu wanita, serta diiringi musik tradisional.\n\nKehadiran ondel-ondel dipercaya dapat mengusir roh jahat dan membawa keberuntungan. Meski kini tampilannya lebih modern, makna budaya dan spiritual dari ondel-ondel tetap dijaga oleh masyarakat Betawi.',
+      title: t('budaya.ondel.title'),
+      desc: t('budaya.ondel.desc'),
       image: Ondel,
     },
     {
-      title: 'Silat Betawi',
-      desc: 'Silat Betawi adalah seni bela diri tradisional yang berkembang di kalangan masyarakat Betawi. Gaya bertarungnya lincah dan penuh strategi, menggabungkan unsur kecepatan, kelincahan, dan spiritualitas. Silat ini juga sering ditampilkan dalam upacara atau pertunjukan budaya.\n\nSelain sebagai bela diri, silat Betawi juga dianggap sebagai warisan budaya yang mengajarkan nilai kesopanan, keberanian, dan kearifan lokal. Ia menjadi simbol kekuatan dan identitas suku Betawi.',
+      title: t('budaya.silat.title'),
+      desc: t('budaya.silat.desc'),
       image: Silat,
     },
     {
-      title: 'Baju Sadariah dan Kebaya Encim',
-      desc: 'Pakaian adat Betawi mencerminkan keragaman budaya yang memengaruhinya, seperti unsur Melayu, Arab, Tionghoa, dan Belanda. Pria biasanya mengenakan baju sadariah dan peci, sedangkan wanita memakai kebaya encim dengan kain batik. Warnanya cerah dan desainnya anggun.\n\nBaju adat ini tidak hanya dipakai saat perayaan budaya, tetapi juga mencerminkan kebanggaan akan identitas dan tradisi masyarakat Betawi yang ramah dan terbuka.',
+      title: t('budaya.baju.title'),
+      desc: t('budaya.baju.desc'),
       image: Baju,
     },
     {
-      title: 'Rumah Kebaya',
-      desc: 'Rumah adat Betawi yang dikenal dengan nama Rumah Kebaya memiliki atap berbentuk seperti lipatan kebaya. Ciri khas lainnya adalah teras depan yang luas dan dihiasi ornamen kayu ukir. Rumah ini dirancang terbuka agar sesuai dengan iklim tropis Jakarta.\n\nFilosofi desain rumah Kebaya mencerminkan nilai kekeluargaan, keterbukaan, dan keselarasan dengan alam yang dijunjung tinggi oleh masyarakat Betawi.',
+      title: t('budaya.rumah.title'),
+      desc: t('budaya.rumah.desc'),
       image: Rumah,
     },
     {
-      title: 'Kue Akar Kelapa',
-      desc: 'Kue akar kelapa adalah salah satu kue tradisional Betawi yang bentuknya menyerupai akar-akar menjuntai. Terbuat dari campuran tepung ketan, kelapa parut, gula, dan telur, lalu digoreng hingga renyah. Rasanya manis dan gurih, sangat cocok dijadikan camilan saat Lebaran atau acara keluarga.\n\nKue ini tidak hanya disukai karena rasanya, tetapi juga karena keunikannya yang mencerminkan kreativitas kuliner masyarakat Betawi.',
+      title: t('budaya.kue.title'),
+      desc: t('budaya.kue.desc'),
       image: AkarKelapa,
     },
   ];
@@ -47,13 +50,13 @@ export default function BudayaDetailPage() {
       <section className="bg-white pt-10 py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-red-700 mb-4 font-serif uppercase tracking-wider">
-            Detail Budaya Betawi
+            {t('budaya.title')}
           </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Budaya Betawi merupakan warisan yang kaya akan nilai sejarah dan
-            tradisi. Dari boneka ondel-ondel hingga rumah kebaya yang ikonik,
-            semuanya menjadi lambang jati diri masyarakat Betawi. Keunikan ini
-            menjadikan budaya Betawi menarik untuk dipelajari dan dilestarikan.
+          <p
+            className="text-gray-700 max-w-3xl mx-auto leading-relaxed"
+            data-aos="fade-up"
+          >
+            {t('budaya.subtitle')}
           </p>
         </div>
 
@@ -67,12 +70,19 @@ export default function BudayaDetailPage() {
                 src={item.image}
                 alt={item.title}
                 className="w-full md:w-48 h-48 object-cover"
+                data-aos="fade-in"
               />
               <div className="text-left">
-                <h3 className="text-2xl font-extrabold text-[#B71C1C] mb-2 uppercase tracking-widest">
+                <h3
+                  className="text-2xl font-extrabold text-[#B71C1C] mb-2 uppercase tracking-widest"
+                  data-aos="fade-in"
+                >
                   {item.title}
                 </h3>
-                <p className="text-gray-800 whitespace-pre-line leading-relaxed text-sm">
+                <p
+                  className="text-gray-800 whitespace-pre-line leading-relaxed text-sm"
+                  data-aos="fade-up"
+                >
                   {item.desc}
                 </p>
               </div>
@@ -83,8 +93,9 @@ export default function BudayaDetailPage() {
         <Link
           className="bg-yellow-400 px-4 py-2 text-white font-semibold hover:bg-yellow-600 mt-8 inline-block text-sm"
           to={'/'}
+          data-aos="fade-in"
         >
-          Kembali Ke Home
+          {t('budaya.back')}
         </Link>
       </section>
     </main>

@@ -1,3 +1,4 @@
+import React from 'react';
 import Ondel from '../assets/images/ondel.jpeg';
 import Rumah from '../assets/images/rumah.jpg';
 import Silat from '../assets/images/silat.jpg';
@@ -6,32 +7,35 @@ import AkarKelapa from '../assets/images/akar-kelapa.jpeg';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function BetawiSection() {
+  const { t } = useTranslation();
+
   const budayaItems = [
     {
-      title: 'Ondel-Ondel',
-      desc: 'Boneka raksasa tradisional yang digunakan untuk menyambut dan meramaikan acara budaya.',
+      title: t('betawi.ondel.title'),
+      desc: t('betawi.ondel.desc'),
       image: Ondel,
     },
     {
-      title: 'Silat Betawi',
-      desc: 'Seni bela diri khas Betawi yang mencerminkan kearifan lokal dan filosofi hidup.',
+      title: t('betawi.silat.title'),
+      desc: t('betawi.silat.desc'),
       image: Silat,
     },
     {
-      title: 'Baju Sadariah dan Kebaya',
-      desc: 'Pakaian tradisional dengan warna dan motif khas, mencerminkan identitas masyarakat Betawi.',
+      title: t('betawi.baju.title'),
+      desc: t('betawi.baju.desc'),
       image: Baju,
     },
     {
-      title: 'Rumah Kebaya',
-      desc: 'Rumah Kebaya dengan ciri khas atap bergelombang dan ukiran etnik.',
+      title: t('betawi.rumah.title'),
+      desc: t('betawi.rumah.desc'),
       image: Rumah,
     },
     {
-      title: 'Kue Akar Kelapa',
-      desc: 'Kue tradisional Betawi berbentuk unik seperti akar, rasanya manis dan gurih, disukai saat Lebaran.',
+      title: t('betawi.kue.title'),
+      desc: t('betawi.kue.desc'),
       image: AkarKelapa,
     },
   ];
@@ -40,16 +44,14 @@ export default function BetawiSection() {
     <section id="budaya" className="bg-white py-16 px-5 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto text-center md:mb-12 mb-5">
         <h2 className="text-3xl md:text-4xl font-bold text-red-700 mb-4 font-serif">
-          Budaya Betawi
+          {t('betawi.sectionTitle')}
         </h2>
-        <p className="text-gray-700 max-w-2xl mx-auto">
-          Betawi adalah suku asli Jakarta yang memiliki budaya unik dan beragam.
-          Berikut beberapa elemen budaya Betawi yang masih dilestarikan hingga
-          kini.
+        <p className="text-gray-700 max-w-2xl mx-auto" data-aos="fade-in">
+          {t('betawi.sectionDesc')}
         </p>
       </div>
 
-      <div className="gap-6 overflow-x-auto py-4 px-2 sm:px-4 lg:px-6 hidden md:flex">
+      <div className="gap-6 overflow-x-auto py-4 px-2 sm:px-4 lg:px-6 hidden md:flex" data-aos="fade-up">
         {budayaItems.map((item, index) => (
           <div
             key={index}
@@ -74,32 +76,14 @@ export default function BetawiSection() {
         ))}
       </div>
 
-      <div className="sm:hidden">
-        <Carousel
-          showThumbs={false}
-          showStatus={false}
-          infiniteLoop
-          autoPlay
-          interval={3000}
-          showArrows={true}
-        >
+      <div className="sm:hidden" data-aos="fade-up">
+        <Carousel showThumbs={false} showStatus={false} infiniteLoop autoPlay interval={3000} showArrows={true}>
           {budayaItems.map((item, index) => (
-            <div
-              key={index}
-              className="bg-[#B71C1C] text-white overflow-hidden shadow-md"
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="h-64 w-full object-cover"
-              />
+            <div key={index} className="bg-[#B71C1C] text-white overflow-hidden shadow-md">
+              <img src={item.image} alt={item.title} className="h-64 w-full object-cover" />
               <div className="p-4 mb-5">
-                <h3 className="text-xl font-semibold mb-2 text-yellow-400">
-                  {item.title}
-                </h3>
-                <p className="text-sm leading-relaxed text-white/90">
-                  {item.desc}
-                </p>
+                <h3 className="text-xl font-semibold mb-2 text-yellow-400">{item.title}</h3>
+                <p className="text-sm leading-relaxed text-white/90">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -110,8 +94,9 @@ export default function BetawiSection() {
         <Link
           className="bg-yellow-400 px-3 py-2 text-white hover:bg-yellow-600"
           to={'/betawi'}
+          data-aos="fade-in"
         >
-          Lihat lebih detail
+          {t('betawi.detail')}
         </Link>
       </div>
     </section>

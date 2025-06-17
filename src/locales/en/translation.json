@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "beranda": "Home",
+    "betawi": "Betawi",
+    "jakarta": "Jakarta",
+    "quiz": "Quiz!"
+  },
+  "home": {
+    "slogan": "The Colorful Traditions from the Land of Betawi"
+  },
+  "betawi": {
+    "sectionTitle": "Betawi Culture",
+    "sectionDesc": "The Betawi people are the indigenous residents of Jakarta who have lived in Batavia since the 17th century. Here are Betawi cultures still preserved today.",
+    "detail": "See more details",
+    "ondel": {
+      "title": "Ondel-Ondel",
+      "desc": "Traditional giant puppets used to welcome and enliven cultural events."
+    },
+    "silat": {
+      "title": "Betawi Silat",
+      "desc": "A traditional martial art reflecting local wisdom and philosophy of life."
+    },
+    "baju": {
+      "title": "Sadariah and Kebaya",
+      "desc": "Traditional clothing with distinctive colors and motifs, symbolizing Betawi identity."
+    },
+    "rumah": {
+      "title": "Kebaya House",
+      "desc": "A traditional house with wavy roof and ethnic carvings."
+    },
+    "kue": {
+      "title": "Akar Kelapa Cake",
+      "desc": "A uniquely shaped traditional Betawi snack, sweet and savory, enjoyed during Eid."
+    }
+  },
+  "hero": {
+    "welcome": "Welcome to",
+    "intro": "Cultural Introduction to",
+    "jakarta": "Jakarta"
+  },
+  "jakartaSection": {
+    "title": "Let's Explore Jakarta's Icons!",
+    "subtitle": "Did You Know?",
+    "desc": "<strong>Jakarta</strong> has many iconic places like Monas and Kota Tua. Though modern, it still holds unique history and culture. <span class='text-red-700 font-bold'>Fun fact</span>: Jakarta was originally called <span class='underline decoration-red-700 decoration-2 font-bold'>Batavia</span> before becoming Indonesia’s capital.",
+    "button": "Explore Jakarta",
+    "monas": "National Monument (Monas)",
+    "babakan": "Setu Babakan Lake",
+    "kotatua": "Old Town Jakarta",
+    "istiqlal": "Istiqlal Mosque & Cathedral Church"
+  },
+  "budaya": {
+    "title": "Betawi Cultural Details",
+    "subtitle": "Betawi culture is a heritage rich in historical values and traditions. From giant ondel-ondel dolls to the iconic kebaya house, all are symbols of Betawi people's identity. This uniqueness makes Betawi culture interesting to learn and preserve.",
+    "back": "Back to Home",
+
+    "ondel": {
+      "title": "Ondel-Ondel",
+      "desc": "Ondel-ondel is a giant puppet typical of the Betawi people, used to enliven traditional ceremonies and celebrations. These puppets have striking appearances with red or white faces and stiff hair. They usually appear in pairs, male and female, accompanied by traditional music.\n\nThe presence of ondel-ondel is believed to ward off evil spirits and bring good fortune. Although the appearance has become more modern today, its cultural and spiritual meaning is still preserved by the Betawi community."
+    },
+    "silat": {
+      "title": "Betawi Silat",
+      "desc": "Betawi Silat is a traditional martial art developed among the Betawi people. Its fighting style is agile and strategic, combining speed, flexibility, and spirituality. It is often performed at ceremonies or cultural events.\n\nBesides being a form of self-defense, Betawi Silat is also seen as a cultural heritage that teaches values of politeness, courage, and local wisdom. It is a symbol of strength and Betawi identity."
+    },
+    "baju": {
+      "title": "Sadariah Outfit & Kebaya Encim",
+      "desc": "Betawi traditional clothing reflects the cultural diversity that influences it, such as Malay, Arab, Chinese, and Dutch elements. Men usually wear sadariah shirts and caps, while women wear kebaya encim with batik cloth. The colors are bright and the design is graceful.\n\nThese traditional outfits are not only worn during cultural celebrations but also represent the pride in the identity and traditions of the open and friendly Betawi people."
+    },
+    "rumah": {
+      "title": "Kebaya House",
+      "desc": "The Betawi traditional house, known as the Kebaya House, has a roof shaped like folded kebaya fabric. Another characteristic is the spacious front porch decorated with carved wooden ornaments. It is designed openly to suit Jakarta's tropical climate.\n\nThe philosophy of the Kebaya house design reflects the values of family, openness, and harmony with nature upheld by the Betawi people."
+    },
+    "kue": {
+      "title": "Akar Kelapa Cake",
+      "desc": "Akar Kelapa Cake is a traditional Betawi snack shaped like hanging roots. It is made from glutinous rice flour, grated coconut, sugar, and eggs, then fried until crispy. Its taste is sweet and savory, making it perfect for Eid or family gatherings.\n\nThis cake is loved not only for its taste but also for its uniqueness, which reflects the culinary creativity of the Betawi people."
+    }
+  },
+  "jakarta": {
+    "title": "Jakarta Icons",
+    "desc": "Here are four iconic places that reflect the culture, history, and diversity of Jakarta.",
+    "button": {
+      "start": "Start the Bajaj",
+      "reset": "Reset Bajaj",
+      "back": "Back to Home"
+    },
+    "monas": {
+      "title": "Monas",
+      "desc": "The National Monument (Monas) is a symbol of Indonesia’s independence struggle, standing tall in the heart of Jakarta. Built during President Soekarno's era, the monument is 132 meters high with a gold-plated peak. Monas offers an educational tourist experience with a historical museum at its base and panoramic city views from the top."
+    },
+    "kotatua": {
+      "title": "Old Town",
+      "desc": "Jakarta's Old Town preserves Dutch colonial history with iconic old buildings such as the Fatahillah Museum and Café Batavia. This area is a popular cultural and photography destination, bringing a nostalgic atmosphere amid the city's modern bustle."
+    },
+    "istiqlal": {
+      "title": "Istiqlal & Cathedral",
+      "desc": "The Istiqlal Mosque and Jakarta Cathedral stand side by side as symbols of tolerance and interfaith harmony. Istiqlal is the largest mosque in Southeast Asia, while the Cathedral features magnificent and historic neo-Gothic architecture."
+    },
+    "babakan": {
+      "title": "Setu Babakan",
+      "desc": "Setu Babakan is the center of Betawi cultural village in South Jakarta. Visitors can enjoy and learn about Betawi arts, cuisine, traditional houses, and customs in a lush and natural environment."
+    }
+  },
+  "quizRules": {
+    "title": "Quiz Rules",
+    "rules": [
+      "The quiz contains <strong>10 questions</strong>.",
+      "It covers <strong>Betawi culture</strong> and <strong>Jakarta's iconic places</strong>.",
+      "Answer correctly to earn <strong>points</strong>!"
+    ],
+    "start": "Start Quiz"
+  },
+  "questions": [
+    {
+      "question": "What is the name of the large Betawi puppet often seen at cultural events?",
+      "options": ["Monas", "Ondel-Ondel", "Silat", "Batavia"]
+    },
+    {
+      "question": "What is Betawi Silat an example of?",
+      "options": [
+        "Traditional food",
+        "Modern dance",
+        "Martial art",
+        "Regional song"
+      ]
+    },
+    {
+      "question": "What is the traditional male attire of Betawi called?",
+      "options": ["Kebaya", "Sadariah", "Kimono", "Batik"]
+    },
+    {
+      "question": "What is the name of the Betawi traditional house with a folded roof shape?",
+      "options": ["Joglo House", "Kebaya House", "Gadang House", "Betawi House"]
+    },
+    {
+      "question": "What is the traditional Betawi snack shaped like roots called?",
+      "options": ["Kue Cubit", "Kue Akar Kelapa", "Kue Lapis", "Kue Lumpur"]
+    },
+    {
+      "question": "What is the top of Monumen Nasional (Monas) called?",
+      "options": [
+        "Golden Umbrella",
+        "Independence Struggle",
+        "Flame of Independence",
+        "Jakarta Light"
+      ]
+    },
+    {
+      "question": "Where can we find the Fatahillah Museum?",
+      "options": ["New Town", "Old City", "Kota Tua", "Small City"]
+    },
+    {
+      "question": "Which place symbolizes religious tolerance in Jakarta with mosque and church side by side?",
+      "options": [
+        "Setu Babakan",
+        "Monas & Old Town",
+        "Istiqlal & Cathedral",
+        "Silat & Ondel-Ondel"
+      ]
+    },
+    {
+      "question": "What is the name of the Betawi cultural village in South Jakarta?",
+      "options": ["Monas", "Setu Babakan", "Lake Toba", "Kota Tua"]
+    },
+    {
+      "question": "What was Jakarta's old name during the colonial era?",
+      "options": ["Sunda Kelapa", "Java", "Betawi", "Batavia"]
+    }
+  ]
+}

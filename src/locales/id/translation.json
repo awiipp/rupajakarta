@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "beranda": "Beranda",
+    "betawi": "Betawi",
+    "jakarta": "Jakarta",
+    "quiz": "Quiz!"
+  },
+  "home": {
+    "slogan": "Warna-warni Tradisi dari Tanah Betawi"
+  },
+  "betawi": {
+    "sectionTitle": "Budaya Betawi",
+    "sectionDesc": "Suku Betawi merupakan penduduk asli Jakarta yang menetap di Batavia sejak abad ke-17. Berikut budaya Betawi yang masih dijaga hingga kini.",
+    "detail": "Lihat lebih detail",
+    "ondel": {
+      "title": "Ondel-Ondel",
+      "desc": "Boneka raksasa tradisional yang digunakan untuk menyambut dan meramaikan acara budaya."
+    },
+    "silat": {
+      "title": "Silat Betawi",
+      "desc": "Seni bela diri khas Betawi yang mencerminkan kearifan lokal dan filosofi hidup."
+    },
+    "baju": {
+      "title": "Baju Sadariah dan Kebaya",
+      "desc": "Pakaian tradisional dengan warna dan motif khas, mencerminkan identitas masyarakat Betawi."
+    },
+    "rumah": {
+      "title": "Rumah Kebaya",
+      "desc": "Rumah Kebaya dengan ciri khas atap bergelombang dan ukiran etnik."
+    },
+    "kue": {
+      "title": "Kue Akar Kelapa",
+      "desc": "Kue tradisional Betawi berbentuk unik seperti akar, rasanya manis dan gurih, disukai saat Lebaran."
+    }
+  },
+  "hero": {
+    "welcome": "Selamat Datang di",
+    "intro": "Pengenalan Budaya",
+    "jakarta": "Jakarta"
+  },
+  "jakartaSection": {
+    "title": "Ayo, Jelajahi Ikon Jakarta!",
+    "subtitle": "Tahukah Kamu?",
+    "desc": "<strong>Jakarta</strong> punya banyak tempat ikonik seperti Monas dan Kota Tua. Meski modern, kota ini tetap menyimpan sejarah dan budaya unik. <span class='text-red-700 font-bold'>Fun fact</span>: Jakarta awalnya bernama <span class='underline decoration-red-700 decoration-2 font-bold'>Batavia</span> sebelum menjadi ibu kota Indonesia.",
+    "button": "Jelajahi Jakarta",
+    "monas": "Monumen Nasional (Monas)",
+    "babakan": "Setu Babakan",
+    "kotatua": "Kota Tua",
+    "istiqlal": "Masjid Istiqlal & Gereja Katedral"
+  },
+  "budaya": {
+    "title": "Detail Budaya Betawi",
+    "subtitle": "Budaya Betawi merupakan warisan yang kaya akan nilai sejarah dan tradisi. Dari boneka ondel-ondel hingga rumah kebaya yang ikonik, semuanya menjadi lambang jati diri masyarakat Betawi. Keunikan ini menjadikan budaya Betawi menarik untuk dipelajari dan dilestarikan.",
+    "back": "Kembali Ke Home",
+
+    "ondel": {
+      "title": "Ondel-Ondel",
+      "desc": "Ondel-ondel adalah boneka raksasa khas Betawi yang digunakan untuk meramaikan berbagai acara adat dan perayaan. Boneka ini memiliki tampilan mencolok dengan wajah merah atau putih dan rambut kaku yang khas. Biasanya dimainkan berpasangan, satu pria dan satu wanita, serta diiringi musik tradisional.\n\nKehadiran ondel-ondel dipercaya dapat mengusir roh jahat dan membawa keberuntungan. Meski kini tampilannya lebih modern, makna budaya dan spiritual dari ondel-ondel tetap dijaga oleh masyarakat Betawi."
+    },
+    "silat": {
+      "title": "Silat Betawi",
+      "desc": "Silat Betawi adalah seni bela diri tradisional yang berkembang di kalangan masyarakat Betawi. Gaya bertarungnya lincah dan penuh strategi, menggabungkan unsur kecepatan, kelincahan, dan spiritualitas. Silat ini juga sering ditampilkan dalam upacara atau pertunjukan budaya.\n\nSelain sebagai bela diri, silat Betawi juga dianggap sebagai warisan budaya yang mengajarkan nilai kesopanan, keberanian, dan kearifan lokal. Ia menjadi simbol kekuatan dan identitas suku Betawi."
+    },
+    "baju": {
+      "title": "Baju Sadariah dan Kebaya Encim",
+      "desc": "Pakaian adat Betawi mencerminkan keragaman budaya yang memengaruhinya, seperti unsur Melayu, Arab, Tionghoa, dan Belanda. Pria biasanya mengenakan baju sadariah dan peci, sedangkan wanita memakai kebaya encim dengan kain batik. Warnanya cerah dan desainnya anggun.\n\nBaju adat ini tidak hanya dipakai saat perayaan budaya, tetapi juga mencerminkan kebanggaan akan identitas dan tradisi masyarakat Betawi yang ramah dan terbuka."
+    },
+    "rumah": {
+      "title": "Rumah Kebaya",
+      "desc": "Rumah adat Betawi yang dikenal dengan nama Rumah Kebaya memiliki atap berbentuk seperti lipatan kebaya. Ciri khas lainnya adalah teras depan yang luas dan dihiasi ornamen kayu ukir. Rumah ini dirancang terbuka agar sesuai dengan iklim tropis Jakarta.\n\nFilosofi desain rumah Kebaya mencerminkan nilai kekeluargaan, keterbukaan, dan keselarasan dengan alam yang dijunjung tinggi oleh masyarakat Betawi."
+    },
+    "kue": {
+      "title": "Kue Akar Kelapa",
+      "desc": "Kue akar kelapa adalah salah satu kue tradisional Betawi yang bentuknya menyerupai akar-akar menjuntai. Terbuat dari campuran tepung ketan, kelapa parut, gula, dan telur, lalu digoreng hingga renyah. Rasanya manis dan gurih, sangat cocok dijadikan camilan saat Lebaran atau acara keluarga.\n\nKue ini tidak hanya disukai karena rasanya, tetapi juga karena keunikannya yang mencerminkan kreativitas kuliner masyarakat Betawi."
+    }
+  },
+  "jakarta": {
+    "title": "Ikon Jakarta",
+    "desc": "Berikut adalah empat tempat ikonik yang menggambarkan wajah budaya, sejarah, dan keragaman Jakarta.",
+    "button": {
+      "start": "Jalanin Bajaj",
+      "reset": "Reset Bajaj",
+      "back": "Kembali Ke Home"
+    },
+    "monas": {
+      "title": "Monas",
+      "desc": "Monumen Nasional (Monas) adalah simbol perjuangan kemerdekaan Indonesia yang berdiri megah di pusat Jakarta. Dibangun pada masa Presiden Soekarno, monumen ini memiliki tinggi 132 meter dan puncaknya dilapisi emas. Monas menjadi tempat wisata edukatif dengan museum sejarah di dasarnya dan pemandangan kota dari puncaknya."
+    },
+    "kotatua": {
+      "title": "Kota Tua",
+      "desc": "Kota Tua Jakarta menyimpan sejarah kolonial Belanda dengan bangunan-bangunan kuno yang ikonik seperti Museum Fatahillah dan Cafe Batavia. Area ini menjadi destinasi wisata budaya dan fotografi yang populer, menghadirkan nuansa tempo dulu di tengah hiruk-pikuk modernitas."
+    },
+    "istiqlal": {
+      "title": "Istiqlal & Katedral",
+      "desc": "Masjid Istiqlal dan Gereja Katedral Jakarta berdiri berdampingan sebagai simbol toleransi dan kerukunan antarumat beragama. Masjid Istiqlal adalah yang terbesar di Asia Tenggara, sementara Katedral mencerminkan arsitektur neo-gotik yang megah dan bersejarah."
+    },
+    "babakan": {
+      "title": "Setu Babakan",
+      "desc": "Setu Babakan adalah pusat perkampungan budaya Betawi di Jakarta Selatan. Di sini, pengunjung bisa menikmati dan mempelajari kesenian, kuliner, rumah adat, serta tradisi masyarakat Betawi dalam suasana yang asri dan alami."
+    }
+  },
+  "quizRules": {
+    "title": "Peraturan Quiz",
+    "rules": [
+      "Quiz berisi <strong>10 soal</strong>.",
+      "Quiz tentang <strong>budaya Betawi</strong> dan <strong>ikon tempat di Jakarta</strong>.",
+      "Jawab dengan benar untuk mendapatkan <strong>poin</strong>!"
+    ],
+    "start": "Mulai Quiz"
+  },
+  "questions": [
+    {
+      "question": "Apa nama boneka besar khas Betawi yang sering tampil dalam acara budaya?",
+      "options": ["Monas", "Ondel-Ondel", "Silat", "Batavia"]
+    },
+    {
+      "question": "Silat Betawi adalah contoh dari apa?",
+      "options": [
+        "Makanan tradisional",
+        "Tarian modern",
+        "Seni bela diri",
+        "Lagu daerah"
+      ]
+    },
+    {
+      "question": "Baju tradisional pria Betawi disebut apa?",
+      "options": ["Kebaya", "Sadariah", "Kimono", "Batik"]
+    },
+    {
+      "question": "Apa nama rumah adat Betawi dengan atap seperti lipatan baju?",
+      "options": ["Rumah Joglo", "Rumah Kebaya", "Rumah Gadang", "Rumah Betawi"]
+    },
+    {
+      "question": "Kue tradisional Betawi yang bentuknya seperti akar disebut?",
+      "options": ["Kue Cubit", "Kue Akar Kelapa", "Kue Lapis", "Kue Lumpur"]
+    },
+    {
+      "question": "Puncak Monumen Nasional (Monas) disebut?",
+      "options": [
+        "Payung Emas",
+        "Perjuangan kemerdekaan",
+        "Lidah Api Kemerdekaan",
+        "Cahaya Jakarta"
+      ]
+    },
+    {
+      "question": "Di mana kita bisa melihat Museum Fatahillah?",
+      "options": ["Kota Baru", "Kota Lama", "Kota Tua", "Kota Kecil"]
+    },
+    {
+      "question": "Simbol toleransi di Jakarta dengan masjid dan gereja berdampingan adalah?",
+      "options": [
+        "Setu Babakan",
+        "Monas & Kota Tua",
+        "Istiqlal & Katedral",
+        "Silat & Ondel-Ondel"
+      ]
+    },
+    {
+      "question": "Tempat budaya Betawi di Jakarta Selatan disebut?",
+      "options": ["Monas", "Setu Babakan", "Danau Toba", "Kota Tua"]
+    },
+    {
+      "question": "Apa nama lama Jakarta saat zaman kolonial?",
+      "options": ["Sunda Kelapa", "Jawa", "Betawi", "Batavia"]
+    }
+  ]
+}

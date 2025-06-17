@@ -23,7 +23,7 @@ export default function Footer() {
           <ul className="space-y-2 font-medium">
             <li>
               <Link to={'/'} className="hover:text-white">
-                Home
+                Beranda
               </Link>
             </li>
             <li>
