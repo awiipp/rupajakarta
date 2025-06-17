@@ -3,7 +3,7 @@ import ImageQuiz from '../assets/images/kartun.png';
 
 export function QuizSection() {
   return (
-    <section className="bg-white py-16 px-6 md:px-20">
+    <section className="bg-white px-6 md:px-20">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:gap-12 px-6 py-12">
         <div className="md:w-1/2 w-full">
           <img

@@ -14,7 +14,7 @@ export default function QuizRulesPage() {
         }}
       ></div>
 
-      <div className="md:mt-5 mt-28 mb-10 z-10 max-w-[600px] md:px-16 px-10 py-10 md:py-8 md:w-full w-[90%] bg-black/20 backdrop-blur-md shadow-2xl text-white text-center">
+      <div className="md:mt-8 mt-28 mb-10 z-10 max-w-[600px] md:px-16 px-10 py-10 md:py-8 md:w-full w-[90%] bg-black/20 backdrop-blur-md shadow-2xl text-white text-center">
         <img
           src={RulesImage}
           alt="Ilustrasi Peraturan Quiz"

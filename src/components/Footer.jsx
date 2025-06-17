@@ -10,11 +10,11 @@ export default function Footer() {
           <img
             src={Logo}
             alt="RupaJakarta"
-            className="h-[70px] md:h-[80px] object-contain"
+            className="h-[70px] md:h-[80px] object-contain mb-3"
           />
           <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-            quis veritatis sequi quasi fugit, sit distinctio!
+            RupaJakarta adalah website yang dibuat untuk mengenalkan budaya
+            Betawi dan tempat-tempat terkenal di Jakarta.
           </p>
         </div>
 

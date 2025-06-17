@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const JakartaSection = () => {
   return (
-    <section className="bg-white py-16 px-4 md:px-8 lg:px-16">
+    <section className="bg-white pt-16 pb-14 px-4 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto mb-8 flex flex-col md:flex-row items-center md:items-start">
         <div className="w-full md:w-1/2 text-center md:text-right px-5 mb-6 md:mb-0">
           <h2 className="text-3xl sm:text-4xl font-bold font-serif text-red-700">
