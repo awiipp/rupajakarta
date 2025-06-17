@@ -1,14 +1,17 @@
 import { FaInstagram, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/images/logo.png';
 
 export default function Footer() {
   return (
     <footer className="bg-[#B71C1C] text-[#FFD700] pt-10">
       <div className="max-w-7xl mx-auto md:px-10 px-10 grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         <div className="text-left">
-          <h1 className="md:text-3xl mb-3 text-xl font-bold text-white text-shadow">
-            <span className="text-yellow-400 text-shadow">Rupa</span>Jakarta
-          </h1>
+          <img
+            src={Logo}
+            alt="RupaJakarta"
+            className="h-[70px] md:h-[80px] object-contain"
+          />
           <p className="text-sm">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
             quis veritatis sequi quasi fugit, sit distinctio!
@@ -44,7 +47,7 @@ export default function Footer() {
         <div className="text-left md:pl-20">
           <h2 className="font-bold text-lg text-white">Developed by</h2>
           <h2 className="font-bold text-lg text-white">
-            (Ini ganti quote aja)
+            (Ini tempat ganti bahasa)
           </h2>
           <ul className="space-y-2 text-base">
             <li className="flex items-center space-x-3">
@@ -77,7 +80,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-[#FFD700]/40 mt-6 py-4 text-center text-sm text-[#FFD700]">
-        &copy; {new Date().getFullYear()} SiPitung. All rights reserved.
+        &copy; {new Date().getFullYear()} RupaJakarta. All rights reserved.
       </div>
     </footer>
   );

@@ -107,7 +107,7 @@ export default function QuizApp() {
             width={width}
             height={height}
             gravity={0.3}
-            numberOfPieces={300}
+            numberOfPieces={500}
             recycle={false}
           />
         </div>
@@ -169,7 +169,7 @@ export default function QuizApp() {
                   </button>
 
                   <Link
-                    to={'/'}
+                    to={'/quiz-rules'}
                     className="px-6 py-3 bg-white text-red-700 font-bold hover:bg-white/80 transition shadow-md hover:scale-105 duration-200"
                   >
                     Selesai

@@ -1,5 +1,8 @@
 import React from 'react';
-import ImageTest from '../assets/images/test.jpg';
+import KotaTua from '../assets/images/fatahillah.jpg';
+import Monas from '../assets/images/monas.jpg';
+import IstiqlalKatedral from '../assets/images/istiqlal-katedral.jpeg';
+import Babakan from '../assets/images/babakan.jpeg';
 import { Link } from 'react-router-dom';
 
 const JakartaSection = () => {
@@ -38,7 +41,7 @@ const JakartaSection = () => {
       <div className="flex flex-col md:flex-row gap-4 px-2 md:px-0">
         <div className="w-full md:w-1/2 relative group overflow-hidden shadow-lg">
           <img
-            src={ImageTest}
+            src={Monas}
             alt="Monas"
             className="w-full md:h-[420px] h-[200px] object-cover group-hover:scale-105 transition-transform duration-300"
           />
@@ -51,7 +54,7 @@ const JakartaSection = () => {
           <div className="flex gap-4">
             <div className="w-1/2 relative group overflow-hidden shadow-lg">
               <img
-                src={ImageTest}
+                src={Babakan}
                 alt="Setu Babakan"
                 className="w-full h-[150px] md:h-[200px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -61,7 +64,7 @@ const JakartaSection = () => {
             </div>
             <div className="w-1/2 relative group overflow-hidden shadow-lg">
               <img
-                src={ImageTest}
+                src={KotaTua}
                 alt="Kota Tua"
                 className="w-full h-[150px] md:h-[200px] object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -72,7 +75,7 @@ const JakartaSection = () => {
           </div>
           <div className="relative group overflow-hidden shadow-lg">
             <img
-              src={ImageTest}
+              src={IstiqlalKatedral}
               alt="Masjid Istiqlal & Gereja Katedral"
               className="w-full h-[200px] object-cover group-hover:scale-105 transition-transform duration-300"
             />

@@ -1,40 +1,50 @@
 import { Link } from 'react-router-dom';
-import ImageTest from '../assets/images/test.jpg';
+import Ondel from '../assets/images/ondel.jpeg';
+import Rumah from '../assets/images/rumah.jpg';
+import Silat from '../assets/images/silat.jpg';
+import Baju from '../assets/images/baju-adat.jpeg';
+import PawaiBetawi from '../assets/images/pawai-betawi.jpg';
+import AkarKelapa from '../assets/images/akar-kelapa.jpeg';
 
 export default function BudayaDetailPage() {
   const budayaItems = [
     {
       title: 'Ondel-Ondel',
       desc: 'Ondel-ondel adalah boneka raksasa khas Betawi yang digunakan untuk meramaikan berbagai acara adat dan perayaan. Boneka ini memiliki tampilan mencolok dengan wajah merah atau putih dan rambut kaku yang khas. Biasanya dimainkan berpasangan, satu pria dan satu wanita, serta diiringi musik tradisional.\n\nKehadiran ondel-ondel dipercaya dapat mengusir roh jahat dan membawa keberuntungan. Meski kini tampilannya lebih modern, makna budaya dan spiritual dari ondel-ondel tetap dijaga oleh masyarakat Betawi.',
-      image: ImageTest,
+      image: Ondel,
     },
     {
       title: 'Silat Betawi',
       desc: 'Silat Betawi adalah seni bela diri tradisional yang berkembang di kalangan masyarakat Betawi. Gaya bertarungnya lincah dan penuh strategi, menggabungkan unsur kecepatan, kelincahan, dan spiritualitas. Silat ini juga sering ditampilkan dalam upacara atau pertunjukan budaya.\n\nSelain sebagai bela diri, silat Betawi juga dianggap sebagai warisan budaya yang mengajarkan nilai kesopanan, keberanian, dan kearifan lokal. Ia menjadi simbol kekuatan dan identitas suku Betawi.',
-      image: ImageTest,
+      image: Silat,
     },
     {
-      title: 'Baju Adat',
+      title: 'Baju Sadariah dan Kebaya Encim',
       desc: 'Pakaian adat Betawi mencerminkan keragaman budaya yang memengaruhinya, seperti unsur Melayu, Arab, Tionghoa, dan Belanda. Pria biasanya mengenakan baju sadariah dan peci, sedangkan wanita memakai kebaya encim dengan kain batik. Warnanya cerah dan desainnya anggun.\n\nBaju adat ini tidak hanya dipakai saat perayaan budaya, tetapi juga mencerminkan kebanggaan akan identitas dan tradisi masyarakat Betawi yang ramah dan terbuka.',
-      image: ImageTest,
+      image: Baju,
     },
     {
-      title: 'Rumah Adat',
+      title: 'Rumah Kebaya',
       desc: 'Rumah adat Betawi yang dikenal dengan nama Rumah Kebaya memiliki atap berbentuk seperti lipatan kebaya. Ciri khas lainnya adalah teras depan yang luas dan dihiasi ornamen kayu ukir. Rumah ini dirancang terbuka agar sesuai dengan iklim tropis Jakarta.\n\nFilosofi desain rumah Kebaya mencerminkan nilai kekeluargaan, keterbukaan, dan keselarasan dengan alam yang dijunjung tinggi oleh masyarakat Betawi.',
-      image: ImageTest,
+      image: Rumah,
+    },
+    {
+      title: 'Kue Akar Kelapa',
+      desc: 'Kue akar kelapa adalah salah satu kue tradisional Betawi yang bentuknya menyerupai akar-akar menjuntai. Terbuat dari campuran tepung ketan, kelapa parut, gula, dan telur, lalu digoreng hingga renyah. Rasanya manis dan gurih, sangat cocok dijadikan camilan saat Lebaran atau acara keluarga.\n\nKue ini tidak hanya disukai karena rasanya, tetapi juga karena keunikannya yang mencerminkan kreativitas kuliner masyarakat Betawi.',
+      image: AkarKelapa,
     },
   ];
 
   return (
     <main>
       <div
-        className="w-full h-[180px] bg-[url('../assets/images/test.jpg')] bg-cover bg-center relative"
+        className="w-full md:h-[300px] h-[150px] bg-[url('../assets/images/test.jpg')] bg-cover bg-top relative"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0.50), rgba(255,255,255,1)), url(${ImageTest})`,
+          backgroundImage: `linear-gradient(to bottom, rgba(255,255,255,0.50), rgba(255,255,255,1)), url(${PawaiBetawi})`,
         }}
       ></div>
 
-      <section className="bg-white py-16 px-4 md:px-8 lg:px-16">
+      <section className="bg-white pt-10 py-16 px-4 md:px-8 lg:px-16">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-red-700 mb-4 font-serif uppercase tracking-wider">
             Detail Budaya Betawi

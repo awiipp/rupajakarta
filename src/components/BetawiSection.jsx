@@ -2,6 +2,7 @@ import Ondel from '../assets/images/ondel.jpeg';
 import Rumah from '../assets/images/rumah.jpg';
 import Silat from '../assets/images/silat.jpg';
 import Baju from '../assets/images/baju-adat.jpeg';
+import AkarKelapa from '../assets/images/akar-kelapa.jpeg';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Link } from 'react-router-dom';
@@ -19,14 +20,19 @@ export default function BetawiSection() {
       image: Silat,
     },
     {
-      title: 'Baju Adat',
+      title: 'Baju Sadariah dan Kebaya',
       desc: 'Pakaian tradisional dengan warna dan motif khas, mencerminkan identitas masyarakat Betawi.',
       image: Baju,
     },
     {
-      title: 'Rumah Adat',
+      title: 'Rumah Kebaya',
       desc: 'Rumah Kebaya dengan ciri khas atap bergelombang dan ukiran etnik.',
       image: Rumah,
+    },
+    {
+      title: 'Kue Akar Kelapa',
+      desc: 'Kue tradisional Betawi berbentuk unik seperti akar, rasanya manis dan gurih, disukai saat Lebaran.',
+      image: AkarKelapa,
     },
   ];
 
@@ -43,25 +49,24 @@ export default function BetawiSection() {
         </p>
       </div>
 
-      {/* desktop */}
-      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="gap-6 overflow-x-auto py-4 px-2 sm:px-4 lg:px-6 hidden md:flex">
         {budayaItems.map((item, index) => (
           <div
             key={index}
-            className="group bg-[#B71C1C] text-white overflow-hidden shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 hover:scale-[1.03]"
+            className="min-w-[250px] sm:min-w-[280px] max-w-xs bg-[#B71C1C] text-white rounded shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-2 hover:scale-[1.03] flex-shrink-0"
           >
             <div className="overflow-hidden">
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
               />
             </div>
             <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2 text-yellow-400 group-hover:text-white transition-colors duration-300">
+              <h3 className="text-xl font-semibold mb-2 text-yellow-400 hover:text-white transition-colors duration-300">
                 {item.title}
               </h3>
-              <p className="text-sm leading-relaxed text-white/90 group-hover:text-white">
+              <p className="text-sm leading-relaxed text-white/90">
                 {item.desc}
               </p>
             </div>
@@ -69,7 +74,6 @@ export default function BetawiSection() {
         ))}
       </div>
 
-      {/* mobile */}
       <div className="sm:hidden">
         <Carousel
           showThumbs={false}
@@ -104,7 +108,7 @@ export default function BetawiSection() {
 
       <div className="w-full flex justify-center items-center mt-5">
         <Link
-          className="bg-yellow-500 px-3 py-2 text-white hover:bg-yellow-600"
+          className="bg-yellow-400 px-3 py-2 text-white hover:bg-yellow-600"
           to={'/betawi'}
         >
           Lihat lebih detail
