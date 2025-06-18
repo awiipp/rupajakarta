@@ -84,7 +84,7 @@
     },
     "monas": {
       "title": "Monas",
-      "desc": "The National Monument (Monas) is a symbol of Indonesia’s independence struggle, standing tall in the heart of Jakarta. Built during President Soekarno's era, the monument is 132 meters high with a gold-plated peak. Monas offers an educational tourist experience with a historical museum at its base and panoramic city views from the top."
+      "desc": "The National Monument (Monas) is a symbol of Indonesia’s struggle for independence, standing tall in the center of Jakarta. Built during President Soekarno's era, the monument is 132 meters high and its top is coated with gold. The peak of Monas is called the \"Flame of Independence\". Monas serves as an educational tourist attraction, featuring a history museum at its base and a city view from its top."
     },
     "kotatua": {
       "title": "Old Town",
@@ -108,61 +108,102 @@
     ],
     "start": "Start Quiz"
   },
-  "questions": [
-    {
-      "question": "What is the name of the large Betawi puppet often seen at cultural events?",
-      "options": ["Monas", "Ondel-Ondel", "Silat", "Batavia"]
+  "quiz": {
+    "questions": [
+      {
+        "question": "What is the name of the large traditional Betawi puppet often seen in cultural events?",
+        "options": ["Monas", "Ondel-Ondel", "Silat", "Batavia"]
+      },
+      {
+        "question": "Betawi Silat is an example of what?",
+        "options": [
+          "Traditional food",
+          "Modern dance",
+          "Martial art",
+          "Folk song"
+        ]
+      },
+      {
+        "question": "What is the name of the traditional male outfit of Betawi?",
+        "options": ["Kebaya", "Sadariah", "Kimono", "Batik"]
+      },
+      {
+        "question": "What is the name of the Betawi traditional house with a roof shaped like folded clothes?",
+        "options": [
+          "Joglo House",
+          "Kebaya House",
+          "Gadang House",
+          "Betawi House"
+        ]
+      },
+      {
+        "question": "What is the name of the traditional Betawi snack shaped like roots?",
+        "options": ["Kue Cubit", "Akar Kelapa Cake", "Layer Cake", "Mud Cake"]
+      },
+      {
+        "question": "What is the top of the National Monument (Monas) called?",
+        "options": [
+          "Golden Umbrella",
+          "Struggle for Independence",
+          "Flame of Independence",
+          "Light of Jakarta"
+        ]
+      },
+      {
+        "question": "Where can you find the Fatahillah Museum?",
+        "options": ["New Town", "Old Town", "Kota Tua", "Small Town"]
+      },
+      {
+        "question": "What is a symbol of tolerance in Jakarta, where a mosque and a cathedral stand side by side?",
+        "options": [
+          "Setu Babakan",
+          "Monas & Old Town",
+          "Istiqlal & Cathedral",
+          "Silat & Ondel-Ondel"
+        ]
+      },
+      {
+        "question": "What is the name of the Betawi cultural center in South Jakarta?",
+        "options": ["Monas", "Setu Babakan", "Lake Toba", "Old Town"]
+      },
+      {
+        "question": "What was Jakarta formerly known as?",
+        "options": ["Sunda Kelapa", "Java", "Betawi", "Batavia"]
+      }
+    ],
+    "correctAnswers": [
+      "Ondel-Ondel",
+      "Martial art",
+      "Sadariah",
+      "Kebaya House",
+      "Akar Kelapa Cake",
+      "Flame of Independence",
+      "Kota Tua",
+      "Istiqlal & Cathedral",
+      "Setu Babakan",
+      "Batavia"
+    ],
+    "result": {
+      "title": "🎉 Your Result 🎉",
+      "perfect": "🌟 Perfect! Amazing job!",
+      "good": "👍 Good! You know Betawi culture well~",
+      "bad": "📚 Let's learn more about Jakarta and Betawi!",
+      "retry": "Retry Quiz",
+      "done": "Finish"
     },
-    {
-      "question": "What is Betawi Silat an example of?",
-      "options": [
-        "Traditional food",
-        "Modern dance",
-        "Martial art",
-        "Regional song"
-      ]
+    "question": "Question",
+    "of": "of",
+    "score": "Score"
+  },
+  "footer": {
+    "desc": "RupaJakarta is a website created to introduce Betawi culture and famous landmarks in Jakarta.",
+    "navigasi": "Navigation",
+    "nav": {
+      "beranda": "Home",
+      "betawi": "Betawi",
+      "jakarta": "Jakarta",
+      "quiz": "Quiz!"
     },
-    {
-      "question": "What is the traditional male attire of Betawi called?",
-      "options": ["Kebaya", "Sadariah", "Kimono", "Batik"]
-    },
-    {
-      "question": "What is the name of the Betawi traditional house with a folded roof shape?",
-      "options": ["Joglo House", "Kebaya House", "Gadang House", "Betawi House"]
-    },
-    {
-      "question": "What is the traditional Betawi snack shaped like roots called?",
-      "options": ["Kue Cubit", "Kue Akar Kelapa", "Kue Lapis", "Kue Lumpur"]
-    },
-    {
-      "question": "What is the top of Monumen Nasional (Monas) called?",
-      "options": [
-        "Golden Umbrella",
-        "Independence Struggle",
-        "Flame of Independence",
-        "Jakarta Light"
-      ]
-    },
-    {
-      "question": "Where can we find the Fatahillah Museum?",
-      "options": ["New Town", "Old City", "Kota Tua", "Small City"]
-    },
-    {
-      "question": "Which place symbolizes religious tolerance in Jakarta with mosque and church side by side?",
-      "options": [
-        "Setu Babakan",
-        "Monas & Old Town",
-        "Istiqlal & Cathedral",
-        "Silat & Ondel-Ondel"
-      ]
-    },
-    {
-      "question": "What is the name of the Betawi cultural village in South Jakarta?",
-      "options": ["Monas", "Setu Babakan", "Lake Toba", "Kota Tua"]
-    },
-    {
-      "question": "What was Jakarta's old name during the colonial era?",
-      "options": ["Sunda Kelapa", "Java", "Betawi", "Batavia"]
-    }
-  ]
+    "bahasa": "Select Language"
+  }
 }

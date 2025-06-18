@@ -1,84 +1,47 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import ImageTest from '../assets/images/test.jpg';
 import { Link } from 'react-router-dom';
 import { useWindowSize } from 'react-use';
 import Confetti from 'react-confetti';
 import Background from '../assets/images/background/ondel.jpeg';
-
-const questions = [
-  {
-    question: 'Berapa jumlah soal dalam quiz budaya Betawi dan ikon Jakarta?',
-    options: ['5', '10', '15', '20'],
-    image: ImageTest,
-    correctAnswer: '10',
-  },
-  {
-    question: 'Apa makanan khas Betawi yang terkenal?',
-    options: ['Rendang', 'Soto Betawi', 'Nasi Padang', 'Gudeg'],
-    image: ImageTest,
-    correctAnswer: 'Soto Betawi',
-  },
-  {
-    question:
-      'Ikon terkenal Jakarta yang berupa monumen setinggi 132 meter adalah?',
-    options: ['Monas', 'Tugu Tani', 'Bundaran HI', 'Museum Nasional'],
-    image: ImageTest,
-    correctAnswer: 'Monas',
-  },
-  {
-    question: 'Alat musik tradisional Betawi yang terbuat dari bambu adalah?',
-    options: ['Gamelan', 'Tanjidor', 'Angklung', 'Kroncong'],
-    image: ImageTest,
-    correctAnswer: 'Tanjidor',
-  },
-  {
-    question:
-      'Pakaian adat Betawi yang biasa dipakai pada acara resmi disebut?',
-    options: ['Batik', 'Kebaya', 'Baju Sadariah', 'Ulos'],
-    image: ImageTest,
-    correctAnswer: 'Baju Sadariah',
-  },
-  {
-    question: 'Betawi dikenal dengan tarian khasnya yang disebut?',
-    options: ['Jaipong', 'Ondel-ondel', 'Reog', 'Lenong'],
-    image: ImageTest,
-    correctAnswer: 'Ondel-ondel',
-  },
-  {
-    question:
-      'Tempat wisata di Jakarta yang terkenal dengan taman miniatur budaya Indonesia adalah?',
-    options: ['Ancol', 'Kota Tua', 'Taman Mini Indonesia Indah', 'Ragunan'],
-    image: ImageTest,
-    correctAnswer: 'Taman Mini Indonesia Indah',
-  },
-  {
-    question:
-      'Minuman khas Betawi yang terbuat dari campuran tape dan kelapa muda adalah?',
-    options: ['Bir Pletok', 'Es Doger', 'Es Cendol', 'Wedang Jahe'],
-    image: ImageTest,
-    correctAnswer: 'Bir Pletok',
-  },
-  {
-    question: 'Jakarta dulu dikenal dengan nama?',
-    options: ['Batavia', 'Jakarta Raya', 'Jayakarta', 'Sunda Kelapa'],
-    image: ImageTest,
-    correctAnswer: 'Batavia',
-  },
-  {
-    question:
-      'Alat musik Betawi yang biasanya dimainkan pada acara pernikahan?',
-    options: ['Gambang', 'Tanjidor', 'Kendang', 'Gendang'],
-    image: ImageTest,
-    correctAnswer: 'Tanjidor',
-  },
-];
+import { useTranslation } from 'react-i18next';
+import ImageTest from '../assets/images/test.jpg';
+import Ondel from '../assets/images/ondel.jpeg';
+import Silat from '../assets/images/silat.jpg';
+import Baju from '../assets/images/baju-adat.jpeg';
+import Rumah from '../assets/images/rumah.jpg';
+import Kue from '../assets/images/akar-kelapa.jpeg';
+import Monas from '../assets/images/monas-atas.jpeg';
+import Kotu from '../assets/images/fatahillah.jpg';
+import Istiqlal from '../assets/images/istiqlal-katedral.jpeg';
+import Babakan from '../assets/images/babakan.jpg';
+import Batavia from '../assets/images/batavia.jpg';
 
 export default function QuizApp() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [showResult, setShowResult] = useState(false);
   const { width, height } = useWindowSize();
+  const { t } = useTranslation();
+  const rawQuestions = t('quiz.questions', { returnObjects: true });
+  const correctAnswers = t('quiz.correctAnswers', { returnObjects: true });
+
+  const questions = rawQuestions.map((q, i) => ({
+    ...q,
+    image: [
+      Ondel,
+      Silat,
+      Baju,
+      Rumah,
+      Kue,
+      Monas,
+      Kotu,
+      Istiqlal,
+      Babakan,
+      Batavia,
+    ][i],
+    correctAnswer: correctAnswers[i],
+  }));
 
   const handleAnswer = (option) => {
     const newAnswers = [...answers];
@@ -138,11 +101,11 @@ export default function QuizApp() {
                 />
 
                 <h1 className="md:text-4xl text-3xl font-bold text-yellow-300 drop-shadow-sm animate-bounce">
-                  🎉 Hasil Kamu 🎉
+                  {t('quiz.result.title')}
                 </h1>
 
                 <p className="text-2xl font-semibold">
-                  Skor:{' '}
+                  {t('quiz.score')}:{' '}
                   <span className="text-yellow-400">
                     {calculateScore()} / {questions.length}
                   </span>
@@ -150,10 +113,10 @@ export default function QuizApp() {
 
                 <p className="text-lg text-white/90">
                   {calculateScore() === questions.length
-                    ? '🌟 Sempurna! Hebat banget!'
+                    ? t('quiz.result.perfect')
                     : calculateScore() >= questions.length * 0.7
-                    ? '👍 Bagus! Kamu paham budaya Betawi~'
-                    : '📚 Yuk belajar lagi tentang Jakarta dan Betawi!'}
+                    ? t('quiz.result.good')
+                    : t('quiz.result.bad')}
                 </p>
 
                 <div className="flex justify-center gap-4 mt-6">
@@ -165,14 +128,14 @@ export default function QuizApp() {
                     }}
                     className="px-6 py-3 bg-yellow-400 text-red-800 font-bold hover:bg-yellow-300 transition shadow-md hover:scale-105 duration-200"
                   >
-                    Ulangi Quiz
+                    {t('quiz.result.retry')}
                   </button>
 
                   <Link
                     to={'/quiz-rules'}
                     className="px-6 py-3 bg-white text-red-700 font-bold hover:bg-white/80 transition shadow-md hover:scale-105 duration-200"
                   >
-                    Selesai
+                    {t('quiz.result.done')}
                   </Link>
                 </div>
               </motion.div>
@@ -187,7 +150,10 @@ export default function QuizApp() {
                 <div className="flex justify-between mb-4 text-sm font-medium">
                   <div className="mb-4 w-3/4">
                     <div className="text-sm font-medium mb-1">
-                      Soal {currentQuestion + 1} dari {questions.length}
+                      <div className="text-sm font-medium mb-1">
+                        {t('quiz.question')} {currentQuestion + 1}{' '}
+                        {t('quiz.of')} {questions.length}
+                      </div>
                     </div>
                     <div className="w-full bg-white/30 h-3 rounded-full overflow-hidden">
                       <div
@@ -201,7 +167,7 @@ export default function QuizApp() {
                     </div>
                   </div>
                   <span>
-                    Skor:{' '}
+                    {t('quiz.score')}:{' '}
                     {
                       answers.filter(
                         (ans, i) => ans === questions[i].correctAnswer

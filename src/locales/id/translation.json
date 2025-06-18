@@ -84,7 +84,7 @@
     },
     "monas": {
       "title": "Monas",
-      "desc": "Monumen Nasional (Monas) adalah simbol perjuangan kemerdekaan Indonesia yang berdiri megah di pusat Jakarta. Dibangun pada masa Presiden Soekarno, monumen ini memiliki tinggi 132 meter dan puncaknya dilapisi emas. Monas menjadi tempat wisata edukatif dengan museum sejarah di dasarnya dan pemandangan kota dari puncaknya."
+      "desc": "Monumen Nasional (Monas) adalah simbol perjuangan kemerdekaan Indonesia yang berdiri megah di pusat Jakarta. Dibangun pada masa Presiden Soekarno, monumen ini memiliki tinggi 132 meter dan puncaknya dilapisi emas. Puncak Monas disebut \"Lidah Api Kemerdekaan\". Monas menjadi tempat wisata edukatif dengan museum sejarah di dasarnya dan pemandangan kota dari puncaknya."
     },
     "kotatua": {
       "title": "Kota Tua",
@@ -108,61 +108,102 @@
     ],
     "start": "Mulai Quiz"
   },
-  "questions": [
-    {
-      "question": "Apa nama boneka besar khas Betawi yang sering tampil dalam acara budaya?",
-      "options": ["Monas", "Ondel-Ondel", "Silat", "Batavia"]
+  "quiz": {
+    "questions": [
+      {
+        "question": "Apa nama boneka besar khas Betawi yang sering tampil dalam acara budaya?",
+        "options": ["Monas", "Ondel-Ondel", "Silat", "Batavia"]
+      },
+      {
+        "question": "Silat Betawi adalah contoh dari apa?",
+        "options": [
+          "Makanan tradisional",
+          "Tarian modern",
+          "Seni bela diri",
+          "Lagu daerah"
+        ]
+      },
+      {
+        "question": "Baju tradisional pria Betawi disebut apa?",
+        "options": ["Kebaya", "Sadariah", "Kimono", "Batik"]
+      },
+      {
+        "question": "Apa nama rumah adat Betawi dengan atap seperti lipatan baju?",
+        "options": [
+          "Rumah Joglo",
+          "Rumah Kebaya",
+          "Rumah Gadang",
+          "Rumah Betawi"
+        ]
+      },
+      {
+        "question": "Kue tradisional Betawi yang bentuknya seperti akar disebut?",
+        "options": ["Kue Cubit", "Kue Akar Kelapa", "Kue Lapis", "Kue Lumpur"]
+      },
+      {
+        "question": "Puncak Monumen Nasional (Monas) disebut?",
+        "options": [
+          "Payung Emas",
+          "Perjuangan kemerdekaan",
+          "Lidah Api Kemerdekaan",
+          "Cahaya Jakarta"
+        ]
+      },
+      {
+        "question": "Di mana kita bisa melihat Museum Fatahillah?",
+        "options": ["Kota Baru", "Kota Lama", "Kota Tua", "Kota Kecil"]
+      },
+      {
+        "question": "Simbol toleransi di Jakarta dengan masjid dan gereja berdampingan adalah?",
+        "options": [
+          "Setu Babakan",
+          "Monas & Kota Tua",
+          "Istiqlal & Katedral",
+          "Silat & Ondel-Ondel"
+        ]
+      },
+      {
+        "question": "Tempat budaya Betawi di Jakarta Selatan disebut?",
+        "options": ["Monas", "Setu Babakan", "Danau Toba", "Kota Tua"]
+      },
+      {
+        "question": "Apa nama lama Jakarta sebelum dikenal sebagai Jakarta?",
+        "options": ["Sunda Kelapa", "Jawa", "Betawi", "Batavia"]
+      }
+    ],
+    "correctAnswers": [
+      "Ondel-Ondel",
+      "Seni bela diri",
+      "Sadariah",
+      "Rumah Kebaya",
+      "Kue Akar Kelapa",
+      "Lidah Api Kemerdekaan",
+      "Kota Tua",
+      "Istiqlal & Katedral",
+      "Setu Babakan",
+      "Batavia"
+    ],
+    "result": {
+      "title": "🎉 Hasil Kamu 🎉",
+      "perfect": "🌟 Sempurna! Hebat banget!",
+      "good": "👍 Bagus! Kamu paham budaya Betawi~",
+      "bad": "📚 Yuk belajar lagi tentang Jakarta dan Betawi!",
+      "retry": "Ulangi Quiz",
+      "done": "Selesai"
     },
-    {
-      "question": "Silat Betawi adalah contoh dari apa?",
-      "options": [
-        "Makanan tradisional",
-        "Tarian modern",
-        "Seni bela diri",
-        "Lagu daerah"
-      ]
+    "question": "Soal",
+    "of": "dari",
+    "score": "Skor"
+  },
+  "footer": {
+    "desc": "RupaJakarta adalah website yang dibuat untuk mengenalkan budaya Betawi dan tempat-tempat terkenal di Jakarta.",
+    "navigasi": "Navigasi",
+    "nav": {
+      "beranda": "Beranda",
+      "betawi": "Betawi",
+      "jakarta": "Jakarta",
+      "quiz": "Quiz!"
     },
-    {
-      "question": "Baju tradisional pria Betawi disebut apa?",
-      "options": ["Kebaya", "Sadariah", "Kimono", "Batik"]
-    },
-    {
-      "question": "Apa nama rumah adat Betawi dengan atap seperti lipatan baju?",
-      "options": ["Rumah Joglo", "Rumah Kebaya", "Rumah Gadang", "Rumah Betawi"]
-    },
-    {
-      "question": "Kue tradisional Betawi yang bentuknya seperti akar disebut?",
-      "options": ["Kue Cubit", "Kue Akar Kelapa", "Kue Lapis", "Kue Lumpur"]
-    },
-    {
-      "question": "Puncak Monumen Nasional (Monas) disebut?",
-      "options": [
-        "Payung Emas",
-        "Perjuangan kemerdekaan",
-        "Lidah Api Kemerdekaan",
-        "Cahaya Jakarta"
-      ]
-    },
-    {
-      "question": "Di mana kita bisa melihat Museum Fatahillah?",
-      "options": ["Kota Baru", "Kota Lama", "Kota Tua", "Kota Kecil"]
-    },
-    {
-      "question": "Simbol toleransi di Jakarta dengan masjid dan gereja berdampingan adalah?",
-      "options": [
-        "Setu Babakan",
-        "Monas & Kota Tua",
-        "Istiqlal & Katedral",
-        "Silat & Ondel-Ondel"
-      ]
-    },
-    {
-      "question": "Tempat budaya Betawi di Jakarta Selatan disebut?",
-      "options": ["Monas", "Setu Babakan", "Danau Toba", "Kota Tua"]
-    },
-    {
-      "question": "Apa nama lama Jakarta saat zaman kolonial?",
-      "options": ["Sunda Kelapa", "Jawa", "Betawi", "Batavia"]
-    }
-  ]
+    "bahasa": "Pilih Bahasa"
+  }
 }

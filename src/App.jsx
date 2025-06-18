@@ -17,7 +17,7 @@ function App() {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    AOS.init({ duration: 300, once: true, delay: 200 });
+    AOS.init({ duration: 300, once: false, delay: 200 });
   }, []);
 
   useEffect(() => {
