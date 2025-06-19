@@ -194,6 +194,11 @@
       "jakarta": "ジャカルタ",
       "quiz": "クイズ！"
     },
-    "bahasa": "Select Language"
+    "bahasa": "言語を選んでください"
+  },
+  "quizSection": {
+    "title": "知識を試そう！",
+    "desc": "チャレンジの準備はできましたか？<span class=\"underline decoration-red-700 decoration-2\">バタウィ文化とジャカルタのシンボル</span> に関するクイズに参加して、あなたがどれほど <span class=\"font-bold text-red-700\">ジャカルタ</span> を知っているか試してみましょう！",
+    "button": "クイズに参加しよう"
   }
 }

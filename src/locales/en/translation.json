@@ -204,6 +204,11 @@
       "jakarta": "Jakarta",
       "quiz": "Quiz!"
     },
-    "bahasa": "Select Language"
+    "bahasa": "Choose a language"
+  },
+  "quizSection": {
+    "title": "Test your knowledge!",
+    "desc": "Ready for a challenge? Take the quiz on <span class=\"underline decoration-red-700 decoration-2\">Betawi culture and Jakarta’s icons</span> to find out how well you know <span class=\"font-bold text-red-700\">Jakarta!</span>",
+    "button": "Take the quiz"
   }
 }

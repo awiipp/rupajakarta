@@ -205,5 +205,10 @@
       "quiz": "Quiz!"
     },
     "bahasa": "Pilih Bahasa"
+  },
+  "quizSection": {
+    "title": "Uji Pengetahuanmu!",
+    "desc": "Siap untuk tantangan? Ikuti kuis <span class=\"underline decoration-red-700 decoration-2\">budaya Betawi dan ikon Jakarta</span> untuk mengetahui seberapa jauh kamu mengenal kota <span class=\"font-bold text-red-700\">Jakarta!</span>",
+    "button": "Ikuti Quiz"
   }
 }
