@@ -69,7 +69,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-[#FFD700]/40 mt-6 py-4 text-center text-sm text-[#FFD700]">
-        &copy; {new Date().getFullYear()} RupaJakarta. All rights reserved.
+        &copy; {new Date().getFullYear()} RupaJakarta
       </div>
     </footer>
   );
