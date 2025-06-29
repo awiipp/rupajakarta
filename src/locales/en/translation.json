@@ -10,27 +10,27 @@
   },
   "betawi": {
     "sectionTitle": "Betawi Culture",
-    "sectionDesc": "The Betawi people are the indigenous residents of Jakarta who have lived in Batavia since the 17th century. Here are Betawi cultures still preserved today.",
+    "sectionDesc": "The Betawi people are the native inhabitants of Jakarta who have lived in Batavia since the 17th century. Here are Betawi cultural elements that are still preserved today.",
     "detail": "See more details",
     "ondel": {
       "title": "Ondel-Ondel",
-      "desc": "Traditional giant puppets used to welcome and enliven cultural events."
+      "desc": "Giant traditional puppets used to welcome and enliven cultural festivals."
     },
     "silat": {
       "title": "Betawi Silat",
-      "desc": "A traditional martial art reflecting local wisdom and philosophy of life."
+      "desc": "Pencak silat is a traditional Indonesian martial art that combines physical movements with cultural values."
     },
     "baju": {
-      "title": "Sadariah and Kebaya",
-      "desc": "Traditional clothing with distinctive colors and motifs, symbolizing Betawi identity."
+      "title": "Sadariah and Kebaya Clothes",
+      "desc": "Traditional clothing with distinctive Betawi colors and patterns, reflecting the identity of the Betawi people."
     },
     "rumah": {
       "title": "Kebaya House",
-      "desc": "A traditional house with wavy roof and ethnic carvings."
+      "desc": "Kebaya House features a unique roof shaped like a folded kebaya and traditional ethnic carvings."
     },
     "kue": {
       "title": "Akar Kelapa Cake",
-      "desc": "A uniquely shaped traditional Betawi snack, sweet and savory, enjoyed during Eid."
+      "desc": "A traditional Betawi cake with a unique root-like shape, sweet and savory in taste, often enjoyed during Eid."
     }
   },
   "hero": {
